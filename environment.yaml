@@ -1,0 +1,12 @@
+name: tfg
+channels:
+  - defaults
+dependencies:
+  - python=3.12.4
+  - lz4=4.3.2
+  - pip
+  - pip:
+    - --extra-index-url https://rospypi.github.io/simple/
+    - rosbag
+    - roslz4
+
