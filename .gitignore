@@ -2,3 +2,5 @@
 data/*
 pretrained/*
 out/*
+*.pyc
+__pycache__/
