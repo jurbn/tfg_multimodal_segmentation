@@ -121,16 +121,6 @@ with Engine(custom_parser=parser) as engine:
             gts = gts.cuda(non_blocking=True)
             modal_xs = modal_xs.cuda(non_blocking=True)
 
-            # plot the first image, modal_x, and gt of the batch
-            # use cv2 to plot the image
-            # if gts[0].max() > 1:
-            #     cv2.imshow('img', imgs[0].cpu().numpy().transpose(1, 2, 0))
-            #     cv2.imshow('modal_x', modal_xs[0].cpu().numpy().transpose(1, 2, 0))
-            #     # for the gt, we need to convert it to 3-channel image
-            #     cv2.imshow('gt', show_mask(gts[0].cpu().numpy(), colors=config.class_colors))
-            #     cv2.waitKey(0)
-            
-
             aux_rate = 0.2
             loss = model(imgs, modal_xs, gts)
 

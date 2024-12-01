@@ -700,7 +700,7 @@ def load_dualpath_model(model, model_file, is_restore=False):
     # load raw state_dict
     t_start = time.time()
     if isinstance(model_file, str):
-        raw_state_dict = torch.load(model_file, map_location=torch.device('cuda'))
+        raw_state_dict = torch.load(model_file, map_location=torch.device('cpu'))
         #raw_state_dict = torch.load(model_file)
         if 'model' in raw_state_dict.keys():
             raw_state_dict = raw_state_dict['model']

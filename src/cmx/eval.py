@@ -10,7 +10,7 @@ import torch.nn as nn
 
 from config import config
 from utils.pyt_utils import ensure_dir, link_file, load_model, parse_devices
-from utils.visualize import print_iou, show_img
+from utils.visualize import print_iou, show_img, color_mask
 from engine.evaluator import Evaluator
 from engine.logger import get_logger
 from utils.metric import hist_info, compute_score
@@ -42,15 +42,17 @@ class SegEvaluator(Evaluator):
                 save_path = self.save_path + '/' + '/'.join(name.split('/')[:-1])
                 filename = name.split('/')[-1].split('.')[0] + '.png'
                 ensure_dir(save_path)
-                result_img = Image.fromarray(pred.astype(np.uint8), mode='P')
-                palette_list = list(np.array(colors).flat)
-                if len(palette_list) < 768:
-                    palette_list += [0] * (768 - len(palette_list))
-                result_img.putpalette(palette_list)
-                result_img.save(os.path.join(save_path, filename))
+                # result_img = Image.fromarray(pred.astype(np.uint8), mode='P')
+                # palette_list = list(np.array(colors).flat)
+                # if len(palette_list) < 768:
+                #     palette_list += [0] * (768 - len(palette_list))
+                # result_img.putpalette(palette_list)
+                result_img = color_mask(pred.astype(np.uint8), colors)
+                # result_img.save(os.path.join(save_path, filename))
+                cv2.imwrite(os.path.join(save_path, filename), result_img)
 
                 # save raw result
-                cv2.imwrite(os.path.join(save_path, filename), pred)
+                cv2.imwrite(os.path.join(save_path, filename, '_raw.png'), pred)
                 logger.info('Save the image ' + filename)
 
                 

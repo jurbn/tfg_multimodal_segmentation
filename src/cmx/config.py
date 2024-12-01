@@ -25,8 +25,8 @@ C.dataset_path = osp.join(C.root_dir, 'data', C.dataset_name)
 C.random_scramble = True
 
 # COCO JSON files for each split
-C.train_json = osp.join(C.dataset_path, 'lindenthal_coco', 'train_shuffled.json')
-C.val_json = osp.join(C.dataset_path, 'lindenthal_coco', 'val_shuffled.json') # annotations_lindenthal
+C.train_json = osp.join(C.dataset_path, 'lindenthal_coco', 'train.json')
+C.val_json = osp.join(C.dataset_path, 'lindenthal_coco', 'val.json') # annotations_lindenthal
 
 # RGB and Additional Modality (e.g., Depth or Thermal) Folder Settings
 C.rgb_root_folder = osp.join(C.dataset_path, 'lindenthal_coco', 'images')
@@ -49,8 +49,8 @@ C.class_colors = [[int(255 * x) for x in rgb] for rgb in C.class_colors]
 C.background = 255
 C.image_height = 480
 C.image_width = 640
-C.norm_mean = np.array([0., 0., 0.])
-C.norm_std = np.array([1., 1., 1.])
+C.norm_mean = np.array([0., 0., 0.], dtype=np.float32)
+C.norm_std = np.array([1., 1., 1.],  dtype=np.float32)
 
 """Settings for network"""
 C.backbone = 'mit_b0'
@@ -69,7 +69,7 @@ C.num_train_imgs = len(train_coco.getImgIds())
 C.num_eval_imgs = len(COCO(C.val_json).getImgIds())  # Dynamic count based on COCO data
 C.nepochs = 500
 C.niters_per_epoch = C.num_train_imgs // C.batch_size + 1
-C.num_workers = 8
+C.num_workers = 0
 C.train_scale_array = [0.5, 0.75, 1, 1.25, 1.5, 1.75]
 C.warm_up_epoch = 10
 
@@ -94,7 +94,7 @@ def add_path(path):
         sys.path.insert(0, path)
 add_path(osp.join(C.root_dir))
 
-C.log_dir = osp.abspath('out/log_' + C.dataset_name + '_' + C.backbone + '_' + 'pretrained' + '_' + 'shuffled')
+C.log_dir = osp.abspath('out/log_' + C.dataset_name + '_' + C.backbone + '_' + 'pretrained')
 C.tb_dir = osp.abspath(osp.join(C.log_dir, "tb"))
 C.log_dir_link = C.log_dir
 C.checkpoint_dir = osp.abspath(osp.join(C.log_dir, "checkpoint"))

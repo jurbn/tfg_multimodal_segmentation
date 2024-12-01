@@ -88,5 +88,14 @@ def show_mask(mask, colors=None):
         img[np.where(mask == i)] = colors[i]
     return img
 
-
-
+def color_mask(mask, colors):
+    """
+    Assign colors to a mask image.
+    Args:
+        mask: a PIL Image with a single channel
+        colors: a list of RGB colors
+    """
+    colored_mask = np.zeros((mask.shape[0], mask.shape[1], 3), dtype=np.uint8)
+    for i in range(len(colors)):
+        colored_mask[mask == i] = colors[i]
+    return colored_mask

@@ -134,7 +134,7 @@ class Engine(object):
             # tmp = torch.load(self.continue_state_object,
             #                  map_location=lambda storage, loc: storage.cuda(
             #                      self.local_rank))
-            tmp = torch.load(self.continue_state_object, map_location=torch.device('cuda'))
+            tmp = torch.load(self.continue_state_object, map_location=torch.device('cpu'))
         else:
             tmp = torch.load(self.continue_state_object)
         t_ioend = time.time()

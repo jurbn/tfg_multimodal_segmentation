@@ -1,10 +1,13 @@
 import os
 os.environ["OPENCV_IO_ENABLE_OPENEXR"]="1"
 import cv2
+import json
 import torch
 import numpy as np
 from pycocotools.coco import COCO
 import torch.utils.data as data
+
+from src.depth2hha.getHHA import getHHA
 
 class RGBXDataset(data.Dataset):
     def __init__(self, setting, split_name, preprocess=None, file_length=None):
@@ -47,9 +50,10 @@ class RGBXDataset(data.Dataset):
             # remove the extension
             frame_id = frame_id.split('.')[0]
 
-            # Paths for RGB and additional modality X (depth in .exr format)
+            # Paths for RGB and additional modality X
             rgb_path = os.path.join(self._rgb_path, video_id, 'color', f"{frame_id}{self._rgb_format}")
             x_path = os.path.join(self._x_path, video_id, 'depth', f"{frame_id}{self._x_format}")
+            intrinsics_path = os.path.join(self._rgb_path, video_id, 'intrinsics.json')
 
             # Load images
             rgb = self._open_image(rgb_path, cv2.COLOR_BGR2RGB)
