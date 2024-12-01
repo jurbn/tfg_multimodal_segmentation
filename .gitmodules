@@ -1,3 +1,9 @@
 [submodule "src/cmx"]
 	path = src/cmx
 	url = https://github.com/jurbn/RGBX_Semantic_Segmentation_TFG.git
+[submodule "src/depth2hha"]
+	path = src/depth2hha
+	url = https://github.com/jurbn/Depth2HHA-python_TFG.git
+[submodule "src/dformer"]
+	path = src/dformer
+	url = https://github.com/jurbn/DFormer_TFG.git
