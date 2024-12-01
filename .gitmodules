@@ -1,0 +1,3 @@
+[submodule "src/cmx"]
+	path = src/cmx
+	url = https://github.com/jurbn/RGBX_Semantic_Segmentation_TFG.git
