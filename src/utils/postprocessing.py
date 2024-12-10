@@ -14,12 +14,20 @@ JET_COLORMAP = np.array([
         [0, 0, 0.5],     # Dark blue
 ], dtype=np.float64)
 
-def depth_to_normal(depth_map):
+def depth_to_normal(depth_map, equalize=True):
     """
     Uses the depth map to generate a normal map
     :param depth_map: The input depth map
     :out: The computed normal map
     """
+    if len(depth_map.shape) != 2:
+        raise ValueError("The input depth map must be a single channel image")
+    if equalize:
+        depth_map = equalize_histogram(depth_map)
+
+    if len(depth_map.shape) != 2:
+        depth_map = depth_map[:, :, 0]
+
     h, w = depth_map.shape
     
     x, y = np.meshgrid(np.arange(w), np.arange(h))
@@ -48,7 +56,7 @@ def equalize_histogram(image):
     :param image: The uint16 image to equalize
     :out: The equalized image
     """
-    hist, bins = np.histogram(image.flatten(), bins=65536, range=[1, 65535])
+    hist, bins = np.histogram(image.flatten(), bins=65536, range=[1, 65534])
     # Calculate the cumulative distribution function (CDF)
     cdf = hist.cumsum()
     cdf_normalized = cdf / cdf[-1]
@@ -58,16 +66,17 @@ def equalize_histogram(image):
     equalized_histogram = equalized.reshape(image.shape).astype(np.uint16)
     return equalized_histogram
 
-def depth_to_jet(depth_map):
+def depth_to_jet(depth_map, equalize=True):
     """
     Uses the depth map to generate a jet map
     :param depth_map: The input depth map
     :out: The computed jet map
     """
     # Equalize the histogram of the depth image
-    equalized_map = equalize_histogram(depth_map)
+    if equalize:
+        depth_map = equalize_histogram(depth_map)
     # Normalize the image to [0, 1]
-    normalized_image = equalized_map.astype(np.float64) / 65535.0
+    normalized_image = depth_map.astype(np.float64) / 65535.0
     # Generate interpolated colormap values
     indices = np.linspace(0, 1, len(JET_COLORMAP))
     red_interp = np.interp(normalized_image.flat, indices, JET_COLORMAP[:, 0]).reshape(depth_map.shape)
