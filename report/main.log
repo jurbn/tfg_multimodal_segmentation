@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.7.5)  11 DEC 2024 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.7.5)  14 DEC 2024 18:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -246,7 +246,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip53
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -296,26 +298,26 @@ LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count297
@@ -335,10 +337,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
  (./main.out) (./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -377,11 +379,11 @@ Package hyperref Info: Link coloring OFF on input line 27.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -390,19 +392,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 \end{abstract}
+l.34 \end{abstract}
                     [1] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \chapter
+l.38 \chapter
              {Introduction} [1
 
 ]
@@ -415,75 +417,84 @@ Cap\'{\i }tulo 2.
 
 ]
 Cap\'{\i }tulo 3.
-<media/data/depth_gueese.png, id=73, 851.18pt x 481.8pt>
+<media/data/ir_gueese.jpg, id=87, 851.18pt x 481.8pt>
+File: media/data/ir_gueese.jpg Graphic file (type jpg)
+<use media/data/ir_gueese.jpg>
+Package pdftex.def Info: media/data/ir_gueese.jpg  used on input line 57.
+(pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
+<media/data/depth_gueese.png, id=88, 851.18pt x 481.8pt>
 File: media/data/depth_gueese.png Graphic file (type png)
 <use media/data/depth_gueese.png>
-Package pdftex.def Info: media/data/depth_gueese.png  used on input line 61.
+Package pdftex.def Info: media/data/depth_gueese.png  used on input line 63.
 (pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
-<media/data/deptheq_gueese.png, id=74, 638.385pt x 361.35pt>
-File: media/data/deptheq_gueese.png Graphic file (type png)
-<use media/data/deptheq_gueese.png>
-Package pdftex.def Info: media/data/deptheq_gueese.png  used on input line 67.
-(pdftex.def)             Requested size: 203.83417pt x 115.37521pt.
-<media/data/normal_histogram.png, id=77, 613.5723pt x 395.3169pt>
-File: media/data/normal_histogram.png Graphic file (type png)
-<use media/data/normal_histogram.png>
-Package pdftex.def Info: media/data/normal_histogram.png  used on input line 79.
-(pdftex.def)             Requested size: 203.83417pt x 131.32358pt.
-<media/data/equalized_histogram.png, id=79, 613.5723pt x 395.3169pt>
-File: media/data/equalized_histogram.png Graphic file (type png)
-<use media/data/equalized_histogram.png>
-Package pdftex.def Info: media/data/equalized_histogram.png  used on input line 85.
-(pdftex.def)             Requested size: 203.83417pt x 131.32358pt.
+<media/data/dataset_breakdown.png, id=90, 586.1097pt x 570.933pt>
+File: media/data/dataset_breakdown.png Graphic file (type png)
+<use media/data/dataset_breakdown.png>
+Package pdftex.def Info: media/data/dataset_breakdown.png  used on input line 74.
+(pdftex.def)             Requested size: 226.48395pt x 220.62442pt.
+<media/data/mask_gueese_ir.png, id=93, 851.18pt x 481.8pt>
+File: media/data/mask_gueese_ir.png Graphic file (type png)
+<use media/data/mask_gueese_ir.png>
+Package pdftex.def Info: media/data/mask_gueese_ir.png  used on input line 83.
+(pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
+<media/data/mask_gueese_de.png, id=94, 851.18pt x 481.8pt>
+File: media/data/mask_gueese_de.png Graphic file (type png)
+<use media/data/mask_gueese_de.png>
+Package pdftex.def Info: media/data/mask_gueese_de.png  used on input line 89.
+(pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
 [4
 
- <./media/data/depth_gueese.png (PNG copy)> <./media/data/deptheq_gueese.png (PNG copy)>]
+ <./media/data/ir_gueese.jpg> <./media/data/depth_gueese.png (PNG copy)>]
+<media/model/cmx_architecture.png, id=112, 516.0078pt x 360.6273pt>
+File: media/model/cmx_architecture.png Graphic file (type png)
+<use media/model/cmx_architecture.png>
+Package pdftex.def Info: media/model/cmx_architecture.png  used on input line 101.
+(pdftex.def)             Requested size: 452.9679pt x 316.57161pt.
+ [5 <./media/data/dataset_breakdown.png> <./media/data/mask_gueese_ir.png (PNG copy)> <./media/data/mask_gueese_de.png (PNG copy)>] [6 <./media/model/cmx_architecture.png>] Excluding 'comment' comment.
 File: media/data/depth_gueese.png Graphic file (type png)
 <use media/data/depth_gueese.png>
-Package pdftex.def Info: media/data/depth_gueese.png  used on input line 105.
+Package pdftex.def Info: media/data/depth_gueese.png  used on input line 169.
 (pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
-<media/data/hha_gueese.png, id=90, 851.18pt x 481.8pt>
+<media/data/hha_gueese.png, id=135, 851.18pt x 481.8pt>
 File: media/data/hha_gueese.png Graphic file (type png)
 <use media/data/hha_gueese.png>
-Package pdftex.def Info: media/data/hha_gueese.png  used on input line 111.
+Package pdftex.def Info: media/data/hha_gueese.png  used on input line 175.
 (pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
-<media/misc/jet_colormap.png, id=93, 256.96pt x 30.1125pt>
-File: media/misc/jet_colormap.png Graphic file (type png)
-<use media/misc/jet_colormap.png>
-Package pdftex.def Info: media/misc/jet_colormap.png  used on input line 123.
-(pdftex.def)             Requested size: 226.48395pt x 26.54134pt.
 File: media/data/depth_gueese.png Graphic file (type png)
 <use media/data/depth_gueese.png>
-Package pdftex.def Info: media/data/depth_gueese.png  used on input line 131.
+Package pdftex.def Info: media/data/depth_gueese.png  used on input line 189.
 (pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
-<media/data/jet_gueese.png, id=94, 638.385pt x 361.35pt>
+<media/data/jet_gueese.png, id=138, 638.385pt x 361.35pt>
 File: media/data/jet_gueese.png Graphic file (type png)
 <use media/data/jet_gueese.png>
-Package pdftex.def Info: media/data/jet_gueese.png  used on input line 137.
+Package pdftex.def Info: media/data/jet_gueese.png  used on input line 195.
 (pdftex.def)             Requested size: 203.83417pt x 115.37521pt.
- [5 <./media/data/normal_histogram.png> <./media/data/equalized_histogram.png> <./media/data/hha_gueese.png (PNG copy)>]
 File: media/data/depth_gueese.png Graphic file (type png)
 <use media/data/depth_gueese.png>
-Package pdftex.def Info: media/data/depth_gueese.png  used on input line 151.
+Package pdftex.def Info: media/data/depth_gueese.png  used on input line 212.
 (pdftex.def)             Requested size: 203.83417pt x 115.37704pt.
-<media/data/normal_gueese.png, id=105, 638.385pt x 361.35pt>
+<media/data/normal_gueese.png, id=140, 638.385pt x 361.35pt>
 File: media/data/normal_gueese.png Graphic file (type png)
 <use media/data/normal_gueese.png>
-Package pdftex.def Info: media/data/normal_gueese.png  used on input line 157.
+Package pdftex.def Info: media/data/normal_gueese.png  used on input line 218.
 (pdftex.def)             Requested size: 203.83417pt x 115.37521pt.
- [6 <./media/misc/jet_colormap.png (PNG copy)> <./media/data/jet_gueese.png (PNG copy)> <./media/data/normal_gueese.png (PNG copy)>] [7]
+ [7 <./media/data/hha_gueese.png (PNG copy)>]
+
+LaTeX Warning: Reference `tab:techniques-comparison' on page 8 undefined on input line 227.
+
+[8 <./media/data/jet_gueese.png (PNG copy)> <./media/data/normal_gueese.png (PNG copy)>] [9]
 Cap\'{\i }tulo 4.
-[8
+[10
 
 ]
 Cap\'{\i }tulo 5.
-[9
+[11
 
 ]
 Cap\'{\i }tulo 6.
-(./main.bbl [10
+(./main.bbl [12
 
-]) [11
+]) [13
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -493,22 +504,26 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DE0CDEF3BC75F39E96F3B45EF37FF53C;1030.
+(rerunfilecheck)             Checksum: 68322CE98C723A2E8FD9B679A0B2C525;1239.
  ) 
 Here is how much of TeX's memory you used:
- 13076 strings out of 474222
- 207628 string characters out of 5748734
- 1934975 words of memory out of 5000000
- 35151 multiletter control sequences out of 15000+600000
- 568769 words of font info for 77 fonts, out of 8000000 for 9000
+ 13183 strings out of 474222
+ 209710 string characters out of 5748734
+ 1944975 words of memory out of 5000000
+ 35237 multiletter control sequences out of 15000+600000
+ 570455 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,585b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (13 pages, 2020075 bytes).
+ 75i,10n,79p,1800b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (15 pages, 3585592 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

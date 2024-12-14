@@ -3,7 +3,7 @@ import numpy as np
 
 # Define the JET colormap manually in float64 precision
 JET_COLORMAP = np.array([
-        [0.5, 0, 0],     # Dark red
+        [0.5, 0, 0],     # Dark red     # further away
         [1, 0, 0],       # Red
         [1, 0.5, 0],     # Orange
         [1, 1, 0],       # Yellow
@@ -11,8 +11,19 @@ JET_COLORMAP = np.array([
         [0, 1, 1],       # Light cyan
         [0, 0.5, 1],     # Cyan
         [0, 0, 1],       # Blue
-        [0, 0, 0.5],     # Dark blue
+        [0, 0, 0.5],     # Dark blue    # closer
 ], dtype=np.float64)
+
+# Distance colormap is meant to encode distance information in a more
+# coherent way than the JET colormap
+DISTANCE_COLORMAP = np.array([
+    [1.0, 0.0, 0.0],  # further away
+    [0.5, 0.5, 0.0],
+    [0.0, 1.0, 0.0],
+    [0.0, 0.5, 0.5],
+    [0.0, 0.0, 1.0],  # closer
+], dtype=np.float64)
+
 
 def depth_to_normal(depth_map, equalize=True):
     """
@@ -27,26 +38,27 @@ def depth_to_normal(depth_map, equalize=True):
 
     if len(depth_map.shape) != 2:
         depth_map = depth_map[:, :, 0]
-
-    h, w = depth_map.shape
     
-    x, y = np.meshgrid(np.arange(w), np.arange(h))
-    x = x.astype(np.float32)
-    y = y.astype(np.float32)
-
+    # set every 0 value to null value
+    depth_map = depth_map.astype(np.float32)
+    depth_map[depth_map == 0] = np.nan
+    
     # now compute the partial derivatives of depth respect to x and y
     dx = cv.Sobel(depth_map, cv.CV_32F, 1, 0)
     dy = cv.Sobel(depth_map, cv.CV_32F, 0, 1)
 
     # compute the normal vector per each pixel
-    normal = np.dstack((-dx, -dy, np.ones((h, w))))
+    normal = np.dstack((-dx, -dy, np.ones(depth_map.shape)))
     norm = np.sqrt(np.sum(normal**2, axis=2, keepdims=True))
     normal = np.divide(normal, norm, out=np.zeros_like(normal), where=norm!=0)
 
     # map these normal vectors to 65535
     normal = (normal + 1) * 32767.5
+    # set every nan value to 0
+    normal[np.isnan(normal)] = 0
     normal = normal.clip(0, 65535).astype(np.uint16)
 
+    
     # return the map
     return normal
 
@@ -66,22 +78,34 @@ def equalize_histogram(image):
     equalized_histogram = equalized.reshape(image.shape).astype(np.uint16)
     return equalized_histogram
 
-def depth_to_jet(depth_map, equalize=True):
+def depth_to_colormap(depth_map, colormap='jet', equalize=True):
     """
     Uses the depth map to generate a jet map
     :param depth_map: The input depth map
     :out: The computed jet map
     """
+    # Determine the colormap to use
+    if colormap.lower() == 'jet':
+        colormap = JET_COLORMAP
+    elif colormap.lower() == 'distance':
+        colormap = DISTANCE_COLORMAP
+    else:
+        raise ValueError(f"Unsupported colormap: {colormap}")
     # Equalize the histogram of the depth image
     if equalize:
         depth_map = equalize_histogram(depth_map)
     # Normalize the image to [0, 1]
     normalized_image = depth_map.astype(np.float64) / 65535.0
+    # 0 values to Null
+    normalized_image[normalized_image == 0] = np.nan
     # Generate interpolated colormap values
-    indices = np.linspace(0, 1, len(JET_COLORMAP))
-    red_interp = np.interp(normalized_image.flat, indices, JET_COLORMAP[:, 0]).reshape(depth_map.shape)
-    green_interp = np.interp(normalized_image.flat, indices, JET_COLORMAP[:, 1]).reshape(depth_map.shape)
-    blue_interp = np.interp(normalized_image.flat, indices, JET_COLORMAP[:, 2]).reshape(depth_map.shape)
+    indices = np.linspace(0, 1, len(colormap))
+    red_interp = np.interp(normalized_image.flat, indices, colormap[:, 0]).reshape(depth_map.shape)
+    red_interp = np.nan_to_num(red_interp, 0)
+    green_interp = np.interp(normalized_image.flat, indices, colormap[:, 1]).reshape(depth_map.shape)
+    green_interp = np.nan_to_num(green_interp, 0)
+    blue_interp = np.interp(normalized_image.flat, indices, colormap[:, 2]).reshape(depth_map.shape)
+    blue_interp = np.nan_to_num(blue_interp, 0)
     # Combine channels and scale back to uint16 range [0, 65535]
     colormapped_image = np.stack([
         (red_interp * 65535).astype(np.uint16),

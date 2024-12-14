@@ -20,9 +20,24 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{haucke2021exploitingdepthinformationwildlife}
+\BIBentryALTinterwordspacing
+T.~Haucke and V.~Steinhage, ``Exploiting depth information for wildlife monitoring,'' 2021. [Online]. Available: \url{https://arxiv.org/abs/2102.05607}
+\BIBentrySTDinterwordspacing
+
+\bibitem{zhang2023cmxcrossmodalfusionrgbx}
+\BIBentryALTinterwordspacing
+J.~Zhang, H.~Liu, K.~Yang, X.~Hu, R.~Liu, and R.~Stiefelhagen, ``Cmx: Cross-modal fusion for rgb-x semantic segmentation with transformers,'' 2023. [Online]. Available: \url{https://arxiv.org/abs/2203.04838}
+\BIBentrySTDinterwordspacing
+
 \bibitem{gupta2014learningrichfeaturesrgbd}
 \BIBentryALTinterwordspacing
 S.~Gupta, R.~Girshick, P.~Arbeláez, and J.~Malik, ``Learning rich features from rgb-d images for object detection and segmentation,'' 2014. [Online]. Available: \url{https://arxiv.org/abs/1407.5736}
+\BIBentrySTDinterwordspacing
+
+\bibitem{eitel2015multimodaldeeplearningrobust}
+\BIBentryALTinterwordspacing
+A.~Eitel, J.~T. Springenberg, L.~Spinello, M.~Riedmiller, and W.~Burgard, ``Multimodal deep learning for robust rgb-d object recognition,'' 2015. [Online]. Available: \url{https://arxiv.org/abs/1507.06821}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
