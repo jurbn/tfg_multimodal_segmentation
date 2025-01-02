@@ -1,6 +1,6 @@
 .vscode
 data/*
-pretrained/*
 out/*
+pretrained/*
 *.pyc
 __pycache__/

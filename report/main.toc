@@ -1,18 +1,17 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Metodología}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Datos}{4}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Lindenthal Dataset}{4}{subsection.3.1.1}%
-\contentsline {subsubsection}{Desglose del \textit {Dataset}}{5}{section*.3}%
-\contentsline {section}{\numberline {3.2}Modelo}{5}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Entrenamiento}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Técnicas de Pre-Procesado}{6}{subsection.3.2.2}%
-\contentsline {subsubsection}{HHA Encoding}{7}{section*.7}%
-\contentsline {subsubsection}{Colorizacón Jet}{7}{section*.9}%
-\contentsline {subsubsection}{Colorización por Distancia}{7}{section*.11}%
-\contentsline {subsubsection}{Normales}{8}{section*.12}%
-\contentsline {subsubsection}{Comparación de Técnicas}{8}{section*.14}%
-\contentsline {chapter}{\numberline {4}Results}{10}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Discussion}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{12}{chapter.6}%
+\contentsline {section}{\numberline {1.1}Trabajos Relacionados}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Metodología}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Datos}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Lindenthal Camera Traps Dataset}{3}{subsection.2.1.1}%
+\contentsline {subsubsection}{Desglose del \textit {Dataset}}{3}{section*.3}%
+\contentsline {section}{\numberline {2.2}Modelo}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Entrenamiento}{5}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Técnicas de Pre-Procesado}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}HHA Encoding}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Colorizacón Jet}{7}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Colorización por Distancia}{7}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Normales}{8}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Comparación de Técnicas}{8}{subsection.2.3.5}%
+\contentsline {chapter}{\numberline {3}Results}{9}{chapter.3}%
