@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1735857186.26703 -1
-  "./refs.bib" 1734106488.44299 1487 cfdd3efcbcf6161293b036954997f4fd ""
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1737480938.58426 -1
+  "./refs.bib" 1737412572.73213 12303 6e1e3927faf18eeb7c17a0085485af9c ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1735857185.94861 7288 a98a54705e0feffddd8055ce00935772 "pdflatex"
+  "main.aux" 1737480938.23652 17381 7fb67450f718681d95abe6c87178b1ca "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1735857184.80348 "/media/jorge/HDD/TFG/report/main.tex" "main.pdf" "main" 1735857186.26723 0
+["pdflatex"] 1737480936.67134 "/media/jorge/HDD/TFG/report/main.tex" "main.pdf" "main" 1737480938.58447 0
   "/etc/texmf/web2c/texmf.cnf" 1720195874.41696 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/media/jorge/HDD/TFG/report/main.tex" 1735857184.56361 23040 346fb2dfa854bb2279621f48b3fdbb2e ""
+  "/media/jorge/HDD/TFG/report/main.tex" 1737480936.26352 47578 a2f8f85f6bc17adabb31eddf9eca2187 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -117,13 +117,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1720196400.92675 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1720196562 8213111 927cd0fc9496d4fa438da3c9496d32e4 ""
-  "main.aux" 1735857185.94861 7288 a98a54705e0feffddd8055ce00935772 "pdflatex"
-  "main.bbl" 1735856701.38569 2068 2d6860b53d036c6aaaec375b447a7ef9 "bibtex main"
-  "main.out" 1735857185.95161 2006 0352a9842e6f136a1ab8178d3d1aea14 "pdflatex"
-  "main.tex" 1735857184.56361 23040 346fb2dfa854bb2279621f48b3fdbb2e ""
-  "main.toc" 1735857185.95161 1296 50b00168860dd75581736c2a295d3abc "pdflatex"
+  "main.aux" 1737480938.23652 17381 7fb67450f718681d95abe6c87178b1ca "pdflatex"
+  "main.bbl" 1737480572.11153 8580 1e2ca06fa6521ad073acdac7a380d249 "bibtex main"
+  "main.out" 1737480938.23952 4491 a2c2cbbc7838567accb29c502f987b76 "pdflatex"
+  "main.tex" 1737480936.26352 47578 a2f8f85f6bc17adabb31eddf9eca2187 ""
+  "main.toc" 1737480938.23952 2592 840ead5374b1b0863e2d850374082560 "pdflatex"
+  "media/data/cmx_output.png" 1735918592.33104 3761 579937f6cb651b5e96cd773a31d978e5 ""
   "media/data/dataset_breakdown.png" 1734012398.98052 43390 4137339c5b7630a7139941fc7e3e13a2 ""
   "media/data/depth_gueese.png" 1733429622.16221 186561 6744df99ade5f9df40e422b605f1ac02 ""
+  "media/data/gueese_gt.png" 1735918592.34604 3870 bf20deffdca8287f5703bb3b884bc187 ""
   "media/data/hha_gueese.png" 1733429646.50708 1014435 ae4acc5ce1c12c45f72e25c97e4d04ef ""
   "media/data/ir_gueese.jpg" 1734008564.97251 114464 124994ad3395a719497e11df629865e5 ""
   "media/data/jet_gueese.png" 1733484515.33292 118345 90c11dd0339bc3437da6761f2869103f ""
@@ -131,6 +133,10 @@
   "media/data/mask_gueese_ir.png" 1734014392.1169 389869 d2df8bfeca57ffd4f3edfe12b0b71bae ""
   "media/data/normal_gueese.png" 1733484229.82625 444699 d80d1f8581d4eed9d0d13e4caf9136c3 ""
   "media/model/cmx_architecture.png" 1733876995.42437 12852659 a0078a0d6d028b72fac8dac199d8ba41 ""
+  "media/model/dformer_architecture.png" 1737222522.09344 232784 24ae2df750889ad993ec889e74711589 ""
+  "media/model/dformer_block.png" 1737226723.79449 164841 d81cf62635fc10614381e0e2526e53ee ""
+  "media/model/mask_rcnn.png" 1736018572.27545 338534 60ef2919e949e1d0e0eced6528909f8f ""
+  "media/model/unet.png" 1736011202.98084 102103 ec8fdf28611a71bd18e91cd68cad5877 ""
   (generated)
   "main.aux"
   "main.log"
