@@ -10,3 +10,6 @@
 [submodule "report"]
 	path = report
 	url = https://github.com/jurbn/tfg-report.git
+[submodule "src/sort"]
+	path = src/sort
+	url = https://github.com/jurbn/sort.git
