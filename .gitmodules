@@ -7,3 +7,6 @@
 [submodule "src/dformer"]
 	path = src/dformer
 	url = https://github.com/jurbn/DFormer_TFG.git
+[submodule "report"]
+	path = report
+	url = https://github.com/jurbn/tfg-report.git
